@@ -50,3 +50,20 @@ typically, shared server website we can see
 Connection:close
 ```
 in response header. If server is standup,it will not show
+######Caching
+Cache-Control  
+public,private,no-cache(donot cache this response, no-store(never saw this response)
+
+#####4
+######Cookies
+response set cookie
+```
+Set-Cookie:GUID=123;domain=456
+```
+######HTTPS
+add a secure layer between http and tcp (application layer and transport layer)  
+######Cookie paths
+```
+Set-Cookie: GUIO= ; domain= .domain.com;path=/;expires=MOnday,01-01-2000 11:11:00 GMT
+```
+if = .domain.com, the cookie can be used in all subdomain in domain.com
